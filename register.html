@@ -1,0 +1,192 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+
+    <style>
+        body {
+            background-color: LightPink;
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .header {
+            background-color: Purple;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .form-box {
+            background-color: white;
+            width: 350px;
+            margin: 30px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px gray;
+        }
+
+        .form-box h2 {
+            color: Purple;
+            text-align: center;
+        }
+
+        .field {
+            margin-bottom: 15px;
+        }
+
+        .field label {
+            display: block;
+            color: Purple;
+            font-weight: bold;
+            margin-bottom: 6px;
+        }
+
+        .field input[type="text"],
+        .field input[type="password"],
+        .field select {
+            width: 100%;
+            padding: 9px;
+            box-sizing: border-box;
+            border: 1px solid #C9A0DC;
+            border-radius: 5px;
+        }
+
+        .options {
+            margin-top: 8px;
+            line-height: 1.8;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .buttons input {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 5px;
+        }
+
+        .register {
+            background-color: Purple;
+            color: white;
+        }
+
+        .reset {
+            background-color: #E6D5E9;
+            color: Purple;
+        }
+
+        .footer {
+            text-align: center;
+            color: Purple;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>USER REGISTRATION SYSTEM</h2>
+        <small>Welcome to My Website</small>
+    </div>
+
+    <div class="form-box">
+
+        <h2>REGISTRATION FORM</h2>
+
+        <form action="thankyou.html" method="get">
+
+            <div class="field">
+                <label>Login Name:</label>
+                <input type="text" name="loginname"
+                       placeholder="Enter login name" required>
+            </div>
+
+            <div class="field">
+                <label>Password:</label>
+                <input type="password" name="password"
+                       placeholder="Enter password" required>
+            </div>
+
+            <div class="field">
+                <label>Confirm Password:</label>
+                <input type="password" name="resetpassword"
+                       placeholder="Confirm password" required>
+            </div>
+
+            <div class="field">
+                <label>Gender:</label>
+                <div class="options">
+                    <input type="radio" name="gender"
+                           value="Male" required> Male
+
+                    <input type="radio" name="gender"
+                           value="Female"> Female
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Country:</label>
+                <select name="country" required>
+                    <option value="">Select Country</option>
+                    <option value="Pakistan">Pakistan</option>
+                    <option value="India">India</option>
+                    <option value="China">China</option>
+                    <option value="United Kingdom">United Kingdom</option>
+                    <option value="United States">United States</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label>Select Names:</label>
+                <div class="options">
+                    <input type="checkbox" name="names"
+                           value="Ayesha"> Ayesha<br>
+
+                    <input type="checkbox" name="names"
+                           value="Sara"> Sara<br>
+
+                    <input type="checkbox" name="names"
+                           value="Hina"> Hina<br>
+
+                    <input type="checkbox" name="names"
+                           value="Zoya"> Zoya
+                </div>
+            </div>
+
+            <div class="field">
+                <label>Licence:</label>
+                <input type="text" name="licence"
+                       placeholder="Enter licence" required>
+            </div>
+
+            <div class="options">
+                <input type="checkbox" name="agreement"
+                       value="Agreed" required>
+                I Agree with Licence
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Register"
+                       class="register">
+
+                <input type="reset" value="Reset"
+                       class="reset">
+            </div>
+
+        </form>
+    </div>
+
+    <div class="footer">
+        Welcome to my website
+    </div>
+
+</body>
+</html>
+```

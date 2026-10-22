@@ -1,0 +1,135 @@
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Login</title>
+
+    <style>
+        body {
+            background-color: LightPink;
+            font-family: Arial;
+            margin: 0;
+        }
+
+        .header {
+            background-color: Purple;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        .login-box {
+            background-color: white;
+            width: 320px;
+            margin: 50px auto;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px gray;
+        }
+
+        .login-box h2 {
+            text-align: center;
+            color: Purple;
+            margin-bottom: 25px;
+        }
+
+        .field {
+            margin-bottom: 20px;
+        }
+
+        .field label {
+            display: block;
+            color: Purple;
+            font-weight: bold;
+            margin-bottom: 7px;
+        }
+
+        .field input {
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #C9A0DC;
+            border-radius: 5px;
+        }
+
+        .buttons {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .buttons input {
+            background-color: Purple;
+            color: white;
+            padding: 10px 25px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .buttons input:hover {
+            background-color: #5B176B;
+        }
+
+        .register-link {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .register-link a {
+            color: Purple;
+            font-weight: bold;
+        }
+
+        .footer {
+            text-align: center;
+            color: Purple;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="header">
+        <h2>USER REGISTRATION SYSTEM</h2>
+        <small>Welcome to My Website</small>
+    </div>
+
+    <div class="login-box">
+
+        <h2>LOGIN FORM</h2>
+
+        <form action="register.html" method="get">
+
+            <div class="field">
+                <label>Login Name:</label>
+                <input type="text" name="loginname"
+                       placeholder="Enter your name" required>
+            </div>
+
+            <div class="field">
+                <label>Password:</label>
+                <input type="password" name="password"
+                       placeholder="Enter your password" required>
+            </div>
+
+            <div class="buttons">
+                <input type="submit" value="Login">
+            </div>
+
+        </form>
+
+        <div class="register-link">
+            New User?
+            <a href="register.html">Register Here</a>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Welcome to my website
+    </div>
+
+</body>
+</html>
+```
